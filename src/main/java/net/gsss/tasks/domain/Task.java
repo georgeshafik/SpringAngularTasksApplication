@@ -18,6 +18,10 @@ import java.time.LocalDate;
 @AllArgsConstructor
 public class Task {
 
+    public Task() {
+
+    }
+
     @Id
     @GeneratedValue
     private Long id;
