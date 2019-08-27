@@ -2,10 +2,12 @@ package net.gsss.tasks.service;
 
 import net.gsss.tasks.domain.Task;
 import net.gsss.tasks.repository.TaskRepository;
+import org.springframework.stereotype.Component;
 
 /**
  * Created by gs on 2019-08-27
  */
+@Component
 public class TaskServiceImpl implements TaskService {
 
     private TaskRepository taskRepository;
