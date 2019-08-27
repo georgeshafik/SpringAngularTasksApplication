@@ -14,7 +14,7 @@ public class TaskController {
 
     // if we went to localhost:8080 or localhost:8080/
     @GetMapping( value = {"", "/"})
-    public Iterable<Task> listTasks() {
+    public Iterable<Task> list() {
         // We need to reach out to our repository through our service.
         return null;
     }
