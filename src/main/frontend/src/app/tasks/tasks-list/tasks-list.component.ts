@@ -14,6 +14,7 @@ export class TasksListComponent implements OnInit {
     constructor(private taskService: TaskService) { }
 
     ngOnInit() {
+        // Dummy static data
         // this.tasks.push( new Task(1, "Task 1", true, "07/08/17"))
         // this.tasks.push( new Task(2, "Task 2", false, "07/08/17"))
         // this.tasks.push( new Task(3, "Task 3", false, "07/08/17"))
@@ -26,6 +27,12 @@ export class TasksListComponent implements OnInit {
                 },
                 (error) => console.log(error)
             );
+
+
+        // subscribe to onTaskAdded event
+        this.taskService.onTaskAdded.subscribe(
+        (task: Task) => this.tasks.push(task)
+        );
     }
 
     getDueDateLabel(task: Task){

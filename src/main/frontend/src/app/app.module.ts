@@ -7,6 +7,7 @@ import { HttpClientModule, HttpClient } from "@angular/common/http";
 import { TasksAddComponent } from './tasks/tasks-add/tasks-add.component';
 import { TasksListComponent } from './tasks/tasks-list/tasks-list.component';
 import { TaskService } from "./tasks/task.service";
+import {FormsModule} from "@angular/forms";
 
 
 
@@ -18,8 +19,9 @@ import { TaskService } from "./tasks/task.service";
         TasksListComponent
     ],
     imports: [
-      BrowserModule,
-      HttpClientModule
+        BrowserModule,
+        HttpClientModule,
+        FormsModule
     ],
     providers: [TaskService, HttpClientModule, HttpClient],
     bootstrap: [AppComponent]
