@@ -29,9 +29,9 @@ This way the important links below work straight out of the box.
 
 I also installed bootstrap and all npm angular packages from the following location:
 
-/development/Development/Angular4JavaDevelopers/tasks/src/main/frontend
+    /development/Development/Angular4JavaDevelopers/tasks/src/main/frontend
 
-npm install bootstrap@3 --save
+    npm install bootstrap@3 --save
 
 Add a reference to bootstrap css in angular.json configuration file, as shown below:
            
@@ -120,7 +120,7 @@ So the files in location:
 
     /development/Development/Angular4JavaDevelopers/tasks/src/main/frontend/dist/frontend
 
-where build and deployed to the following Spring Boot location:
+where built and deployed to the following Spring Boot location:
 
     /development/Development/Angular4JavaDevelopers/tasks/src/main/resources/static
 
