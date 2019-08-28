@@ -69,7 +69,7 @@ tasks -> src -> main -> frontend -> package.json file:
     "deploy": "copyfiles -f dist/** ../resources/static",
     
 
-We installed three rpm packages so we can perform post/post/deploy operations when
+We installed three rpm packages so we can perform pre/post/deploy operations when
 we run sudo npm run build from the commandline from location
 /development/Development/Angular4JavaDevelopers/tasks/src/main/frontend
 
