@@ -7,7 +7,7 @@ tasks -> src -> main -> frontend
 
 ***
 
-Added a proxy file so base URL in the REST endpoint can work in the development environment
+Added a proxy file in order for base URL in the REST endpoint is able to resolve in the development environment
 {
 
     "/api": {
