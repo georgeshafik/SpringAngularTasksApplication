@@ -1,6 +1,5 @@
 # Spring Angular Tasks Application
-    Angular 8
-    Spring 2.1.7
+## Angular 8, Spring 2.1.7
 
 Angular app lives under
 
