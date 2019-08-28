@@ -6,7 +6,7 @@ tasks -> src -> main -> frontend
 
 ***
 
-Added a proxy file so base URL can work in development environment
+Added a proxy file so base URL in the REST endpoint can work in the development environment
 {
 
     "/api": {
@@ -19,7 +19,8 @@ Added a proxy file so base URL can work in development environment
     
 }
 
-Proxy files is reference in the package.json npm start command
+Proxy config file is referenced in the package.json 
+which is trigger on execution of npm start command
     
     "start": "ng serve --proxy-config proxy-conf.json",
 
