@@ -1,4 +1,4 @@
-# SpringAngularTasksApplication
+# Spring Angular Tasks Application
 
 Angular app lives under
 
