@@ -47,13 +47,13 @@ Add a reference to bootstrap css in angular.json configuration file, as shown be
 
 Important links:
 
-http://localhost:4200/
+    http://localhost:4200/
 
-http://localhost:8080/h2-console    
+    http://localhost:8080/h2-console    
 
 H2 database:
 
-JDBC URL: jdbc:h2:mem:tasks
+    JDBC URL: jdbc:h2:mem:tasks
     
 Following changes where made to the   
 
@@ -66,7 +66,7 @@ tasks -> src -> main -> frontend -> package.json file:
     "predeploy": "rimraf ../resources/static/ && mkdirp ../resources/static",
 
     "deploy": "copyfiles -f dist/** ../resources/static",
-
+    
 
 We installed three rpm packages so we can perform post/post/deploy operations when
 we run sudo npm run build from the commandline from location
@@ -74,32 +74,35 @@ we run sudo npm run build from the commandline from location
 
 Example commands below:
 
-  npm install --save-dev rimraf 
+    npm install --save-dev rimraf 
   
-  npm install --save-dev mkdirp 
+    npm install --save-dev mkdirp 
   
-  sudo npm install --save-dev copyfiles
+    sudo npm install --save-dev copyfiles
+
 
 and cleaned up a security vulnerability by install 
 npm install jquery@3.4.2 after running 
  
-  sudo nom audit
+    sudo nom audit
+
 
 Unix commandline history:
 
-  502  npm install --save-dev rimraf
+    502  npm install --save-dev rimraf
   
-  503  npm audit
+    503  npm audit
   
-  504  sudo npm audit
+    504  sudo npm audit
   
-  505  npm install jquery@3.4.1 
+    505  npm install jquery@3.4.1 
   
-  506  sudo npm audit
+    506  sudo npm audit
   
-  507  npm install --save-dev mkdirp
+    507  npm install --save-dev mkdirp
   
-  508  npm install --save-dev copyfiles
+    508  npm install --save-dev copyfiles
+
 
 Special note I was not able to get the build to work purely by only running npm run build
 this may be attributed to security issues and git.
@@ -108,17 +111,18 @@ The follow worked fine for me:
 
 Unix history log:
 
-  536  sudo npm run build
+    536  sudo npm run build
 
-  537  sudo cp -rf ./dist/frontend/ ../resources/static/
+    537  sudo cp -rf ./dist/frontend/ ../resources/static/
+
 
 So the files in location:
 
-  /development/Development/Angular4JavaDevelopers/tasks/src/main/frontend/dist/frontend
+    /development/Development/Angular4JavaDevelopers/tasks/src/main/frontend/dist/frontend
 
 where build and deployed to the following Spring Boot location:
 
-  /development/Development/Angular4JavaDevelopers/tasks/src/main/resources/static
+    /development/Development/Angular4JavaDevelopers/tasks/src/main/resources/static
 
 
 
