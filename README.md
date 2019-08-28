@@ -83,7 +83,8 @@ Example commands below:
     sudo npm install --save-dev copyfiles
 
 
-and cleaned up a security vulnerability by install 
+Also cleaned up a security vulnerability by installing 
+
 npm install jquery@3.4.2 after running 
  
     sudo nom audit
